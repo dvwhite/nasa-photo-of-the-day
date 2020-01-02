@@ -1,11 +1,15 @@
 import React from "react";
 import "./App.css";
 import Header from './components/Header';
+import Photos from './components/Photos';
 
 function App() {
   return (
     <div className="App">
-      <Header className="App-header" />
+      <div className="App-header">
+        <Header />
+        <Photos className="photo-container" />
+      </div>
     </div>
   );
 }
