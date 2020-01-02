@@ -31,3 +31,16 @@
     transform: rotate(360deg);
   }
 }
+
+/* Styles begin here */
+.photo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1% auto 1% auto; 
+}
+
+.img-centered {
+  text-align: center;
+  max-height: 75vh;
+}
