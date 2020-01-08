@@ -12,8 +12,8 @@ const Photo = ({className, data}) => {
         <img className={className} src={data.url} alt={data.title} />
       </a>
       <h2>{data.title}</h2>
-      <p class="copyright">Copyright: {data.copyright}</p>
-      <p><span class="bold">Explanation: </span>{data.explanation}</p>
+      <p className="copyright"><span className="bold">Copyright: </span>{data.copyright}</p>
+      <p><span className="bold">Explanation: </span>{data.explanation}</p>
     </div>
   );
 }
