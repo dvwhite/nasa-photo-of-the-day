@@ -42,5 +42,37 @@
 
 .img-centered {
   text-align: center;
-  max-height: 75vh;
+  max-height: 120vh;
+}
+
+.card {
+  background: slategray;
+  height: auto;
+  width: 55%;
+  border-radius: 4px;
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+}
+
+p {
+  padding: 0 3% 3% 3%;
+  font-size: 1.2rem;
+  text-align: left;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.copyright {
+  padding: 0;
+  font-size: 1.0rem;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+h3 {
+  font-size: 2.0rem;
 }
