@@ -16,7 +16,10 @@ const Photos = (props) => {
 
   return (
     <div className={props.className}>
-      <Photo className="img-centered" src={photoData.url} alt={photoData.explanation}/>
+      <Photo 
+        className="img-centered" 
+        data={photoData}
+      />
     </div>
   );
 }
