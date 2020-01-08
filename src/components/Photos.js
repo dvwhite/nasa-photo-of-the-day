@@ -10,14 +10,9 @@ const Photos = (props) => {
   useEffect(() => {
     axios
       .get(apiURL)
-      .then(res => {
-        setPhotoData(res.data)
-      })
+      .then(res => setPhotoData(res.data))
       .catch(err => console.log(err));
   }, []);
-  console.log("PhotoData:", photoData)
-  const obj = photoData;
-  console.log("obj:", obj)
 
   return (
     <div className={props.className}>
