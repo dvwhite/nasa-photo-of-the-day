@@ -9,7 +9,9 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  // background-color: #282c34;
+  // background: radial-gradient(ellipse at top, #1B2735 0%, #090A0F 100%);
+  background: radial-gradient(ellipse at top, #1B2735 0%, rgb(26, 29, 44) 100%);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -21,15 +23,6 @@
 
 .App-link {
   color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
 
 /* Styles begin here */
@@ -77,4 +70,20 @@ h2 {
 
 h3 {
   font-size: 2.0rem;
+}
+
+.title {
+  color: #FFF;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 2rem;
+  letter-spacing: 10px;
+  
+  h1 {
+    background: -webkit-linear-gradient(white, #38495a);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
 }
