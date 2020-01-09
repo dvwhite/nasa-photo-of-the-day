@@ -1,5 +1,7 @@
 import React from "react";
 import {Card, CardText, CardBody, CardTitle, CardSubtitle, CardImg} from "reactstrap";
+import { faChevronLeft, faChevronRight } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Photo = ({className, data}) => {
   // Date formatting
@@ -11,7 +13,11 @@ const Photo = ({className, data}) => {
       <CardBody>
         <CardImg top width="100%" src={data.url} alt={data.title} />
         <CardTitle><h2>{data.title}</h2></CardTitle>
-        <CardSubtitle>{formattedDate}</CardSubtitle>
+        <CardSubtitle>
+          <FontAwesomeIcon icon={faChevronLeft} />
+          {` ${formattedDate} `}
+          <FontAwesomeIcon icon={faChevronRight} />
+        </CardSubtitle>  
         <CardText>{data.explanation}</CardText>
       </CardBody>
     </Card>
