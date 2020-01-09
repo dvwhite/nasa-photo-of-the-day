@@ -1,4 +1,5 @@
 import React from "react";
+import {Card, CardText, CardBody, CardTitle, CardSubtitle, CardImg} from "reactstrap";
 
 const Photo = ({className, data}) => {
   // Date formatting
@@ -6,15 +7,14 @@ const Photo = ({className, data}) => {
   const formattedDate = new Date(data.date).toLocaleDateString("en-US", options);
 
   return (
-    <div className="card">
-      <h3>{formattedDate}</h3>
-      <a href={data.url}>
-        <img className={className} src={data.url} alt={data.title} />
-      </a>
-      <h2>{data.title}</h2>
-      <p className="copyright"><span className="bold">Copyright: </span>{data.copyright}</p>
-      <p><span className="bold">Explanation: </span>{data.explanation}</p>
-    </div>
+    <Card>
+      <CardBody>
+        <CardImg top width="100%" src={data.url} alt={data.title} />
+        <CardTitle><h2>{data.title}</h2></CardTitle>
+        <CardSubtitle>{formattedDate}</CardSubtitle>
+        <CardText>{data.explanation}</CardText>
+      </CardBody>
+    </Card>
   );
 }
 
