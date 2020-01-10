@@ -14,6 +14,9 @@ const Photo = ({className, data, photoDate, setPhotoDate}) => {
     const yesterday = moment(photoDate).subtract(1, 'days').format('YYYY-MM-DD');
     setPhotoDate(yesterday);
   }
+
+  // Display a loading message while the data is fetching
+if (!data.url) return <h3>Loading...</h3>;
   
   window.scroll({top: 150, left: 0, behavior: 'smooth' });
   return (
