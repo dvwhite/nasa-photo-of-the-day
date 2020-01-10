@@ -12,7 +12,6 @@
   // background-color: #282c34;
   // background: radial-gradient(ellipse at top, #1B2735 0%, #090A0F 100%);
   background: radial-gradient(ellipse at top, #1B2735 0%, rgb(26, 29, 44) 100%);
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -85,5 +84,23 @@ h3 {
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+  }
+
+  @media (max-width: 950px) {
+    h1 {
+      font-size: 3rem;
+    }
+  }
+
+  @media (max-width: 750px) {
+    h1 {
+      font-size: 2rem;
+    }
+  }
+
+  @media (max-width: 550px) {
+    h1 {
+      font-size: 1.25rem;
+    }
   }
 }
