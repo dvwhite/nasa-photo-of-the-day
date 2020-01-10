@@ -6,7 +6,6 @@ import * as moment from 'moment';
 // const apiKey = 'DEMO_KEY';
 const apiKey = 'G0JxXW0EW98HJMNi4G2bRmloSM4JQchJ7tWBdSH8';
 const dateToday = moment().format('YYYY-MM-DD');
-console.log(dateToday)
 
 const Photos = (props) => {
   const [photoData, setPhotoData] = useState([]);
@@ -22,7 +21,6 @@ const Photos = (props) => {
       })
       .catch(err => console.log(err));
   }, [photoDate]);
-  console.log(photoDate, photoData);
 
   return (
     <div className={props.className}>
