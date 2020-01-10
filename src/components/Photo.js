@@ -1,6 +1,7 @@
 import React from "react";
-import {Card, CardBody, CardSubtitle, CardImg} from "reactstrap";
+import {Card, CardBody, CardImg} from "reactstrap";
 import CardTitle from './CardTitle';
+import CardSubtitle from './CardSubtitle';
 import CardTxt from './CardTxt';
 import { faChevronLeft, faChevronRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
