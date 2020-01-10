@@ -14,7 +14,8 @@ const Photo = ({className, data, photoDate, setPhotoDate}) => {
     const yesterday = moment(photoDate).subtract(1, 'days').format('YYYY-MM-DD');
     setPhotoDate(yesterday);
   }
-
+  
+  window.scroll({top: 150, left: 0, behavior: 'smooth' });
   return (
     <Card>
       <CardBody>
